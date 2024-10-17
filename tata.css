@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(#ffffff, #e0f7fa, #00838f);
+    padding-top: 2em;
+    color: #333333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;  /* Adjusted for readability */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #004d40;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #00796b;
+}
+
+#sub-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #004d40;
+}
+
+#main {
+    width: 60%;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #004d40;
+}
+
+#img-div {
+    margin: 3em 0;
+}
+
+img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px #004d40;
+    margin-bottom: 10px;  /* Kept this margin */
+}
+
+#img-caption {
+    color: #004d40;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+h2 {
+    margin-top: 2.5em; 
+    color: #00796b;
+}
+
+p {
+    text-align: justify;
+    color: #333333;
+}
+
+footer {
+    color: #004d40;
+}
+
+a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    #main {
+      width: 80%;
+    }
+}
+
+@media (max-width: 460px) {
+    body {
+      background: linear-gradient(#ffffff, #e0f7fa);  /* Simplified gradient */
+    }
+    #main {
+      width: 100%;
+    }
+}
+.gallery {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+    margin: 20px 0; /* Add vertical margin for spacing */
+}
+
+.gallery-item {
+    margin: 10px; /* Margin around each item */
+}
+
+.gallery img {
+    max-width: 300px; /* Set a max-width for each image to ensure they fit side by side */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 7px; /* Rounded corners */
+    box-shadow: 5px 5px 25px #004d40; /* Optional shadow for depth */
+    transition: transform 0.5s ease; /* Smooth rotation effect */
+}
+
+.gallery img.rotated {
+    transform: rotate(10deg); /* Rotate image */
+}
+
+.info-box {
+    margin-top: 20px; /* Space above info box */
+    padding: 15px; /* Padding for the info box */
+    border: 1px solid #004d40; /* Border for info box */
+    border-radius: 7px; /* Rounded corners */
+    background-color: #f9f9f9; /* Background color */
+}
